@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "9789ceef-ae6d-44a5-b27e-695613bde6f4",
+		"name": "Bootcamp-Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer-api/customer/v1/customers/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer-api",
+						"customer",
+						"v1",
+						"customers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\":\"Test\",\r\n \"lastName\": \"test\",\r\n \"status\": \"activo\",\r\n \"email\": \"test@gmail.com\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer-api/customer/v1/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer-api",
+						"customer",
+						"v1",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"id\":4,\r\n \"name\":\"Test\",\r\n \"lastName\": \"TEST\",\r\n \"status\": \"Inactivo\",\r\n \"email\": \"TEST@gmail.com\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer-api/customer-api/customer/v1/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer-api",
+						"customer-api",
+						"customer",
+						"v1",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/customer/v1/customers/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer",
+						"v1",
+						"customers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer{id}",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/customer/v1/customers/7?status=Activo",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer",
+						"v1",
+						"customers",
+						"7"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "Activo"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
