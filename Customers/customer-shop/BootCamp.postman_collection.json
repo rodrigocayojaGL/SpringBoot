@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "b8d45a17-9687-49ab-ba5d-5530ab5c966d",
+		"name": "BootCamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/customer/v1/customers/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer",
+						"v1",
+						"customers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\":\"mirta\",\r\n \"lastName\": \"lus\",\r\n \"status\": \"activo\",\r\n \"email\": \"mirta@gmail.com\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/customer/v1/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer",
+						"v1",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"id\":8,\r\n \"name\":\"TESsT\",\r\n \"lastName\": \"TEST\",\r\n \"status\": \"Inactivo\",\r\n \"email\": \"TEST@gmail.com\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/customer/v1/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer",
+						"v1",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/customer/v1/customers/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer",
+						"v1",
+						"customers",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer{id}",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/customer/v1/customers/8?status=atr",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"customer",
+						"v1",
+						"customers",
+						"8"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "atr"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

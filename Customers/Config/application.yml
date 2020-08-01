@@ -1,0 +1,7 @@
+
+url: jdbc:mysql://bootcamp.ckyzngvmlkpk.sa-east-1.rds.amazonaws.com:3306/BOOTCAMP
+username: instructor
+password: GlobalL0g1c!!!
+defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}   
+         
+        
