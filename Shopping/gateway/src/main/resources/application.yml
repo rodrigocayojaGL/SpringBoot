@@ -1,0 +1,22 @@
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  sensitiveHeaders:
+  routes:
+    oauth:
+      path: /payment/**
+      serviceId: SHOPPING 
+      
+server:
+  port: 9090
+spring:
+  application:
+    name: ZUUL
+
