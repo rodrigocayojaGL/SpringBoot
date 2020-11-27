@@ -1,0 +1,42 @@
+{"properties": [
+  {
+    "name": "gl.logger.traced.enabled",
+    "type": "java.lang.Boolean",
+    "description": "Enables the Tracing processor for the aspect.<br/>Default: true"
+  },
+  {
+    "name": "gl.logger.timed.enabled",
+    "type": "java.lang.Boolean",
+    "description": "Enables the Timing processor for the aspect.<br/>Default: true"
+  },
+  {
+    "name": "gl.logger.parameter.enabled",
+    "type": "java.lang.Boolean",
+    "description": "Enables the Loggable annotation to be processed.<br/>Default: true"
+  },
+  {
+    "name": "gl.logger.registry.jmx",
+    "type": "java.lang.Boolean",
+    "description": "Enables the JMX Registry for Micrometer.<br/>Default: true"
+  },
+  {
+    "name": "gl.logger.strings.parameter.method",
+    "type": "java.lang.String",
+    "description": "Changes the text shown for @Loggable for the methods.<br/>Default: Parameters for {}"
+  },
+  {
+    "name": "gl.logger.strings.parameter.exception",
+    "type": "java.lang.String",
+    "description": "Changes the text shown for @Loggable for the exceptions.<br/>Default: Excption at {}: {}"
+  },
+  {
+    "name": "gl.logger.strings.parameter.parameter-value",
+    "type": "java.lang.String",
+    "description": "Changes the text shown for @Loggable for the parameter values.<br/>Default: -> {}"
+  },
+  {
+    "name": "gl.logger.strings.parameter.return-value",
+    "type": "java.lang.String",
+    "description": "Changes the text shown for @Loggable for the return values.<br/>Default: Returning Value {}: {}"
+  }
+]}
